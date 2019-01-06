@@ -6,8 +6,6 @@ RUN apk update \
     && adduser -D -S -h /h2o -s /sbin/nologin -G h2o h2o \
     && mkdir /var/run/h2o \
     && chown h2o:h2o /var/run/h2o \
-    && mkdir /var/log/h2o \
-    && chown h2o:h2o /var/log/h2o \
     && apk add openssl \
     && apk add h2o
 COPY --chown=h2o:h2o base.yml /h2o/base.yml

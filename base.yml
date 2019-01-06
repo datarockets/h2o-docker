@@ -1,7 +1,7 @@
 user: h2o
 pid-file: /var/run/h2o/h2o.pid
-error-log: /var/log/h2o/error.log
-access-log: /var/log/h2o/access.log
+error-log: /dev/stderr
+access-log: /dev/stdout
 
 listen:
   port: 80
